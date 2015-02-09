@@ -1,0 +1,35 @@
+body {
+  padding: 20px 50px;
+  font: 14px/1.5 "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Helvetica, Sans-Serif;
+}
+
+#wrapper {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#wrapper input {
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#wrapper input[type='text'] {
+  font-size: 17px;
+}
+
+#wrapper input[type='submit'] {
+  cursor: pointer;
+  width: 50%;
+}
+
+#player {
+  margin-top: 20px;
+}
+
+#loading {
+  width: 40px;
+  height: 40px;
+  background: url('/images/loading.png');
+}
+
