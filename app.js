@@ -2,7 +2,7 @@
 var express = require('express');
 var app = express();
 
-var auth = express.basicAuth('testUser', 'testPass');
+// var auth = express.basicAuth('testUser', 'testPass');
 
 var nconf = require('nconf');
 nconf.argv().env().file({ file: 'local.json' });
