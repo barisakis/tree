@@ -20,6 +20,8 @@ module.exports = function(app, nconf) {
   //http://blog.modulus.io/nodejs-and-express-basic-authentication
   var auth_candidate = express.basicAuth('tree', 'welcome');
 
+  var invite_candidate = express.basicAuth('tree', '314159');
+
   app.get('/', function(request, response) {
     response.render('main.html');
   });
@@ -35,6 +37,13 @@ module.exports = function(app, nconf) {
 
   app.get('/candidate', function(request, response) {
     response.render('no_li_candidate_form.html');
+  });
+
+  app.get('/hacker', invite_candidate, function(request, response) {
+    response.render('invited_candidate_form.html');
+  });
+  app.get('/hackers', invite_candidate, function(request, response) {
+    response.render('invited_candidate_form.html');
   });
 
   app.get('/post_meeting', auth_candidate, function(request, response) {
