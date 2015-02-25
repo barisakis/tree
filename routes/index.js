@@ -31,6 +31,10 @@ module.exports = function(app, nconf) {
     response.render('team.html');
   });
 
+  app.get('/interested', function(request, response) {
+    response.render('candidate_interest_form.html');
+  });
+
   app.get('/client', function(request, response) {
     response.render('client_form.html');
   });
