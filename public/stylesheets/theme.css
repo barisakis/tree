@@ -429,7 +429,7 @@ nav hr {
 }
 .top-bar .logo {
   max-width: 80px;
-  position: relative;
+  /*position: relative;*/
   bottom: 7px;
 }
 .logo.logo-wide {
